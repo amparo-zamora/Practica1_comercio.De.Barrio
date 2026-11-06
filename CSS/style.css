@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap');
-@import "tailwindcss";
 
 
 * {
@@ -12,28 +11,24 @@
   list-style: none;
 }
 
-:root {
-  --White: #ffffff;
-    
-  --Light: #a20026;
+ :root {
+  --White: #FFFDF6;
 
-  --Dark: #d60539;
+  --Dark: #b60747;
 
-  --Black: #050314;
-
-  --Yellow: #FFDE4D;
+  --Black: #1A1A1A;
 }
 
 
 /* BODY */
 
 
-h1, h2 {
+h1, h2, h3{
   font-family: 'Henny Penny', cursive;
   letter-spacing: 1px;
 }
 
-h3, h4, h5, h6, p, a, span, li {
+h4, h5, h6, p, a, span, li {
   font-family: 'Mukta Malar', sans-serif;
   letter-spacing: 1px;
 }
@@ -70,7 +65,7 @@ body {
   left: 0;
   height: 4px;
   width: 100%;
-  background-color: var(--Light);
+  background-color: var(--Dark);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s ease;
@@ -128,7 +123,7 @@ nav#menu ul li a::after {
   left: 0;
   height: 2px;
   width: 100%;
-  background-color: var(--Light);
+  background-color: var(--Dark);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s ease;
@@ -142,12 +137,15 @@ nav#menu ul li a:hover::after {
   background-color: var(--Black);
   border-radius: 20px;
   border: none;
-  padding: 10px 10px;
+  padding: 5px 5px;
 }
 
 #search-input {
   width: 150%;
   max-width: 300px;
+  color: var(--Dark);
+  text-align: left;
+  text-indent: 10px;
 }
 
 .fa-solid, .fas {
@@ -158,7 +156,7 @@ nav#menu ul li a:hover::after {
 }
 
 .fa-solid:hover, .fas:hover {
-  color: var(--Light);
+  color: var(--Dark);
   font-size: 28px;
   margin-left: 30px;
 }
@@ -176,11 +174,11 @@ nav#menu ul li a:hover::after {
   top: 0;
   left: 0;
   width: 100%;
-  height: 87.15%;
+  height: 91%;
   object-fit: cover;
   display: block;
   z-index: 1;
-  margin-top: 89px;
+  margin-top: 65px;
 }
 
 .start-text {
@@ -217,74 +215,113 @@ nav#menu ul li a:hover::after {
 
 /* CARDS */
 
-/* AQUI PONES EL CSS DE LAS TARJETAS, TE DEJO MI BASE SIN TANTO COLOR Y LUEGO BORRA ESTO */
-.section-title {
-  text-align: center;
-  margin: 100px 0 40px;
-  font-size: 42px;
-  color: var(--Black);
+
+/* FOOTER */
+
+
+.footer {
+  background-color: var(--Black);
+  padding: 40px 20px 20px;
 }
 
-.card-grid {
-  z-index: 2;
-  margin: 40px;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  gap: 30px;
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.cards-comida {
-  background: var(--Dark);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+a .color {
+  color: var(--White);
 }
 
-.cards-comida:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px var(--Light);
-}
-
-.img-snack {
-  height: 200px;
-  overflow: hidden;
-}
-
-.img-snack img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.6s ease;
-}
-
-.cards-comida:hover .img-snack img {
-  transform: scale(1.2);
-}
-
-.info-snack {
-  padding: 20px;
-}
-
-.nombre-snack {
-  font-size: 22px;
-  margin-bottom: 10px;
+a .color:hover {
   color: var(--Dark);
 }
 
-.nombre-snack p {
-  font-size: 14px;
-  margin-bottom: 15px;
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--White);
+  justify-content: center;
+  align-items: center;
+  font-family: 'Creepster', cursive;
+  letter-spacing: 1px;
+}
+
+.footer-logo:hover {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--Dark);
+}
+
+.footer-info {
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-info h3 {
+  color: var(--White);
+  font-family: Henny Penny;
+  padding: 6px 12px;
+  font-size: 18px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.footer-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   color: var(--White);
 }
 
-.precio {
-  display: inline-block;
-  padding: 5px 10px;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  margin-bottom: 15px;
+.footer-info ul li,
+.footer-info p {
+  margin-bottom: 8px;
+  font-size: 18px;
   color: var(--White);
-  background-color: var(--Light);
 }
 
+.footer a:link,
+.footer a:visited {
+  color: var(--White);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--Dark);
+  transition: 0.3s ease;
+}
+
+.social-icons i {
+  color: var(--White);
+  font-size: 24px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.footer-icon:hover {
+  color: var(--Dark);
+  transition: 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: var(--Dark);
+  transform: scale(1.2);
+  transition: 0.3s ease;
+}
+
+.copy {
+  color: var(--White);
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+}

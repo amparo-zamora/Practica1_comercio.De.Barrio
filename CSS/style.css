@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
@@ -11,25 +10,31 @@
   list-style: none;
 }
 
- :root {
-  --White: #FFFDF6;
+:root {
+  --White: #fffdf6;
 
   --Dark: #b60747;
 
-  --Black: #1A1A1A;
+  --Black: #1a1a1a;
 }
-
 
 /* BODY */
 
-
-h1, h2, h3{
-  font-family: 'Henny Penny', cursive;
+h1,
+h2,
+h3 {
+  font-family: "Henny Penny", cursive;
   letter-spacing: 1px;
 }
 
-h4, h5, h6, p, a, span, li {
-  font-family: 'Mukta Malar', sans-serif;
+h4,
+h5,
+h6,
+p,
+a,
+span,
+li {
+  font-family: "Mukta Malar", sans-serif;
   letter-spacing: 1px;
 }
 
@@ -45,15 +50,13 @@ body {
   padding: 0 40px;
 }
 
-
 /* MENU */
-
 
 .logo {
   color: var(--Black);
   font-size: 25px;
   font-weight: bold;
-  font-family: 'Henny Penny', cursive;
+  font-family: "Henny Penny", cursive;
   transition: color 0.8s ease;
   position: relative;
 }
@@ -81,9 +84,7 @@ body {
   padding: 0 40px;
 }
 
-
 /* MENU */
-
 
 nav#menu {
   display: flex;
@@ -148,14 +149,16 @@ nav#menu ul li a:hover::after {
   text-indent: 10px;
 }
 
-.fa-solid, .fas {
+.fa-solid,
+.fas {
   color: var(--Black);
   font-size: 28px;
   margin-left: 30px;
   transition: all 0.3s ease;
 }
 
-.fa-solid:hover, .fas:hover {
+.fa-solid:hover,
+.fas:hover {
   color: var(--Dark);
   font-size: 28px;
   margin-left: 30px;
@@ -189,7 +192,7 @@ nav#menu ul li a:hover::after {
   backdrop-filter: blur(20px);
   box-shadow: 0 15px 22px var(--Black);
   padding: 25px;
-  max-width:650px;
+  max-width: 650px;
 }
 
 .start h1 {
@@ -201,7 +204,7 @@ nav#menu ul li a:hover::after {
 .start h3 {
   color: var(--White);
   font-size: 18px;
-  font-family: 'Mukta Malar', sans-serif;
+  font-family: "Mukta Malar", sans-serif;
   margin-bottom: 25px;
   text-align: center;
 }
@@ -212,12 +215,111 @@ nav#menu ul li a:hover::after {
   text-align: center;
 }
 
-
 /* CARDS */
+.title-nov {
+  color: var(--Black);
+  justify-items: left;
+  font-size: 32px;
+  margin: 100px 0 0 55px;
+}
 
+.card-back {
+  padding: 135px 20px 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  justify-items: center;
+  align-items: start;
+}
+
+.card-back .title {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card-back .title h2 {
+  color: var(--White);
+}
+
+.card {
+  width: 295px;
+  height: min-content;
+  padding: 25px;
+  background: var(--Black);
+  border-radius: 15px;
+}
+
+.card .card-img {
+  width: 100%;
+  text-align: center;
+}
+
+.card .card-img img {
+  height: 200px;
+  margin: -150px 0 15px 0;
+  transition: 0.3s;
+  filter: drop-shadow(0 8px 8px #13062a);
+}
+
+.card:hover .card-img img {
+  height: 240px;
+}
+
+.card .card-title {
+  color: var(--White);
+  font-size: 28px;
+  letter-spacing: -0.5px;
+  margin-top: -5px;
+}
+
+.card .card-title p {
+  color: var(--White);
+  font-size: 18px;
+  margin-top: 1px;
+  letter-spacing: -0.5px;
+}
+
+.card .card-detalles {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.card .card-detalles span {
+  color: var(--White);
+  font-size: 16px;
+}
+
+.card .card-detalles p {
+  color: var(--White);
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: -1px;
+}
+
+.card button {
+  width: 100%;
+  height: 40px;
+  color: var(--Dark);
+  border: 3px solid var(--Dark);
+  padding: 0 18px;
+  background: transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--Dark);
+  color: var(--White);
+  scale: 1.07;
+  transform: translateY(5px);
+}
 
 /* FOOTER */
-
 
 .footer {
   background-color: var(--Black);
@@ -252,7 +354,7 @@ a .color:hover {
   color: var(--White);
   justify-content: center;
   align-items: center;
-  font-family: 'Creepster', cursive;
+  font-family: "Creepster", cursive;
   letter-spacing: 1px;
 }
 

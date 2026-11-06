@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rincón Latino</title>
+    <link rel="icon" src="MEDIA/IMG/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </style>
 </head>
+
 <body>
     
     <div class="wrapper">
@@ -18,10 +21,10 @@
                     <i class="fas fa-bars"></i>
                 </div>
                 <ul id="nav-links">
+                    <li><a href="#">PAÍSES</a></li>
+                    <li><a href="#">NOVEDADES</a></li>
                     <li><a href="#">DULCES</a></li>
                     <li><a href="#">SALADOS</a></li>
-                    <li><a href="#">BEBIDAS</a></li>
-                    <li><a href="#">PAÍSES</a></li>
                 </ul>
 
                 <div class="search">
@@ -29,8 +32,12 @@
                 </div>
 
                 <div class="nav-icons">
-                    <a href="#" title="Mi Perfil"><i class="fa-solid fa-circle-user"></i></a>
-                    <a href="#" title="Carrito"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="login.html" title="Mi Perfil">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </a>
+                    <a href="#" title="Carrito">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
                 </div>
             </nav>
         </div>
@@ -40,29 +47,61 @@
             <div class="start-text">
                 <h1>El sabor de Latinoamérica</h1>
                 <h3>Sabores auténticos de toda Latinoamérica reunidos en un solo lugar.</h3>
-                <p>C. de Chile, 3, Chamartín</p>
+                <p>C. de Chile, 3, Chamartín
+                    de 10:00 a 20:00
+                </p>
             </div>
         </div>
     </div>
 
-    <section id="actividades">
-        <div class="container">
-            <h2 class="section-title">𓎩 Más vendidos 𓎩</h2>
-                
-            <!-- Te dejo lo que usé para una web del año pasado.
-             FIJATE QUE ESTEN LAS CLASES EN MINISCULAS PQ SINO NO FUNCIONA-->
+    <section class="paises">
 
-            <div class="card-grid">
-                <a href="#" class="cards-comida">
-                <div class="img-snack">
-                    <img src="MEDIA/IMG/Frugele-Ambrosoli-Candy-430g-Chile.webp" alt="snacks">
-                </div>
-                    <div class="info-snack">
-                        <h3 class="nombre-snack">NOMBRE</h3>
-                        <span class="precio">dinerito</span>
-                        <p>Este dulce está rico lorem lorem lorem y eso</p>
-                    </div>
-                </a>
-            </div>
     </section>
+
+    <!-- CARDS -->
+    <section>
+
+    </section>
+
+    <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <a href="#inicio" class="color">
+                        <img src="MEDIA/IMG/favicon blanco.svg" alt="Logo">
+                        <h4>Rincón Latino</h4>
+                    </a>
+                </div>
+
+                <div class="footer-info">
+                    <h3>Sobre nosotros</h3>
+                    <ul>
+                        <li class="footer-elem">
+                            <a href="#" class="footer-icon">Como llegar</a>
+                        </li>
+                        <li class="footer-elem">
+                            <a href="" class="footer-icon">Productos</a>
+                        </li>
+                        <li class="footer-elem">
+                            <a class="footer-icon" href="#">Novedades</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-info">
+                    <h3>Contacta con nosotros</h3>
+                        <p>+64 634 13 34 88</p>
+                        <p>info@RincónLatino.com</p>
+                </div>
+
+                <div class="footer-info">
+                    <h3>Síguenos</h3>
+                        <div class="social-icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                </div>
+            </div>
+            <p class="copy"> &copy; 2026 Rincón Latino. Todos los derechos reservados.</p>
+        </footer>
 </body>
